@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #B60000;
+    padding: 15px 20px;
+    margin: auto;
+}
+
+.header p{
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    padding: 0;
+}
+
+/*------------Timer------------*/
+
+#app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.base-timer {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  
+  }
+  
+  .base-timer__svg {
+    transform: scaleX(-1);
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: red;
+  }
+  
+  .base-timer__label {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+
+/*------------Timer end------------*/
+
+.sec1{
+    margin: auto;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.thanks{
+    margin: auto;
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.box1{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.sec{
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h1{
+    font-size: 28px;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+p{
+    font-size: 22px;
+    line-height: 1.4em;
+    font-weight: 300;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.box{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+.box p{
+    font-size: 20px;
+}
+
+.btn{
+    padding: 30px 30px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    background-color: #1bbb26;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #1aa523;
+    transition: 0.2s;
+}
+
+.box2{
+    margin: auto;
+    padding: 25px;
+    background-color: #f3f3f3;
+}
+
+.box2 p{
+    font-size: 20px;
+    line-height: 1.4em;
+    font-weight: 300;
+}
+
+/*---rodapé---*/
+.s4{
+    background-color: #000;
+    margin: auto;
+    max-width: 100%;
+}
+
+.info{
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    padding: 20px;   
+}
+
+.s4 h1{
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.s4 p{
+    color: #FFFFFFA6;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.1rem;
+}
+
+.s4 li{
+    color: #FFFFFFA6;
+    font-size: 13px;
+    list-style: none;
+}
+.s4 a{
+    color: #FFFFFFA6;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 1.3rem;
+}
+
+.rodape{
+    max-width: 800px;
+    margin: auto; 
+}
+.rodape p{
+    font-size: 11px;
+    line-height: 0.8rem;
+    text-align: center;
+    padding: 30px;
+}
+
+  /*-------Funil-------*/
+
+.bg{
+    padding: 0.2rem;
+    background-color: #ffc107!important
+}
+
+.fa-li{
+    padding: 15px;
+}
+
+.fa-ul p{
+    font-size: 22px;
+    line-height: 1.2em;
+}
+
+
+
+  /*-------Responsivo-------*/
+  @media (max-width:767px){
+    .info{
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;   
+    }
+    .rodape{
+        width: auto;
+        margin: auto; 
+    }
+  }
+
+  @media (max-width:480px){
+    .info{
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;   
+    }
+
+  }
