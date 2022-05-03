@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you</title>
+    <link rel="stylesheet" href="css/stylesbr.css">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="sec1">
+        <p style="padding: 50px;"></p>
+        <h1>¡FELICITACIONES, VACANTE EXITOSAMENTE GARANTIZADO!</h1>
+        <p style="padding: 20px;"></p>
+        <div class="thanks">
+            <span class="iconify" data-icon="fluent:mail-arrow-down-16-filled" style="color: #20a451;" data-width="80"></span>
+            <p style="padding: 10px;"></p>
+            <h1>¡MIRA TU EMAIL AHORA!</h1>
+            <p style="padding: 10px;"></p>
+            <h2>Para acceder al programa, deberá seguir los pasos a continuación:</h2>
+            <p style="padding: 10px;"></p>
+            <ul class="fa-ul">
+                <p style="text-align: left; font-size: 20px;" class="fa-li"><i class="iconify" data-icon="bxs:chevron-right-circle" data-width="20" data-height="20" style="margin-right: 10px; color: #20a451;" data-width="30"></i>1. Abra la bandeja de entrada del correo electrónico que utilizó para realizar la compra.</p>
+                <p style="text-align: left; font-size: 20px;" class="fa-li"><i class="iconify" data-icon="bxs:chevron-right-circle" data-width="20" data-height="20" style="margin-right: 10px; color: #20a451;" data-width="30"></i>2. Busque el correo electrónico con el título: "¡Ha llegado su acceso al programa!"</p>
+                <p style="text-align: left; font-size: 20px;" class="fa-li"><i class="iconify" data-icon="bxs:chevron-right-circle" data-width="20" data-height="20" style="margin-right: 10px; color: #20a451;" data-width="30"></i>3. Si no puede encontrar el correo electrónico, búsquelo en la casilla de SPAM, papelera o promociones.</p>
+                <p style="text-align: left; font-size: 20px;" class="fa-li"><i class="iconify" data-icon="bxs:chevron-right-circle" data-width="20" data-height="20" style="margin-right: 10px; color: #20a451;" data-width="30"></i>4. Si tiene algún problema o pregunta con su acceso al programa, comuníquese con nuestro soporte a través del correo electrónico.</p>
+              </ul>
+        </div>
+        <p style="padding: 50px;"></p>
+    </section>
+
+    <section class="s4">
+        <p style="padding:20px"></p>
+        <div class="info">
+            <div>
+                <h1>Adiós Diabetes</h1>
+                <p>Copyright 2022 - Adiós Diabetes ®<br>Todos los derechos reservados.</p>
+            </div>
+            <div>
+                <h1>LINKS IMPORTANTES</h1>
+                <li><a href="#">Terminos de uso</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+            </div>
+            <div>
+                <h1>LA PIRATERÍA ES UN DELITO</h1>
+                <p>La venta de Método Adiós Diabetes solo se puede realizar a través de este sitio. Cualquier otro sitio web en el que encuentre este programa es FALSO e ilegal. Evite la falsificación y rechace el contenido ilegal o pirateado. NO compre programas similares que no se basen en años de estudio en psicología del comportamiento. No somos responsables de las compras realizadas en otros sitios web.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="s4">
+        <div class="rodape"><p>Este sitio web no está afiliado a Facebook ni a ninguna entidad de Facebook. Una vez que dejas Facebook, no es su responsabilidad, es responsabilidad de nuestro sitio web. Hacemos todo lo posible para indicar y mostrar claramente todas las pruebas del producto y utilizar resultados reales. No vendemos su correo electrónico ni ninguna información a terceros. Nunca hacemos ningún tipo de spam. Si tiene alguna pregunta, no dude en utilizar el enlace de contacto y hable con nosotros durante el horario comercial de lunes a viernes de 9:00 am a 6:00 pm. Leemos y respondemos a todos los mensajes por orden de llegada.
+        </p></div>
+    </section>
+
+    <!––------------ SEGURA PARAMETRO -------------––>
+    <script type="text/javascript">
+    jQuery(function($) {
+                jQuery('a').each(function() {
+                    var href = jQuery(this).attr("href");
+                    if (href === undefined) return true;
+                    if (href === "#saibamais") return true;
+                    if (href === "#comprar") return true;
+                    if (href === "#oferta") return true;
+                    if (href === "#preco") return true;
+                    if (href === "#site-header") return true;
+                    if (href === "#preco") return true;
+                    var urlFinal = href + (href.indexOf("?") > 0 ?
+                        location.search.replace("?", "&") :
+                        location.search);
+                    if (urlFinal.indexOf("id=") > 0) {
+                        var a = urlFinal.split("id=")[1];
+                        var src = location.href.split('?')[1]
+                        urlFinal = urlFinal.replace("id=", src)
+                    }
+                    jQuery(this).attr("href", urlFinal);
+                    window.onbeforeunload = "";
+                    history.pushState({}, "", location.href);
+                    history.pushState({}, "", location.href);
+                });
+            });
+    </script>
+    <!––------------ SEGURA PARAMETRO -------------––>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+</html>
